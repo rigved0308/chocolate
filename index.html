@@ -141,11 +141,18 @@
       overflow:hidden;position:relative;
     }
     .photoWrapper{
-      height:260px;position:relative;overflow:hidden;
-      display:grid;place-items:center;
+      height:320px;
+      position:relative;
+      overflow:hidden;
+      display:grid;
+      place-items:center;
     }
     .photoWrapper img{
-      width:100%;height:100%;object-fit:cover;display:block;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center bottom;
+      display:block;
       filter:brightness(1.05) contrast(1.05);
       animation:photoPulse 5s ease-in-out infinite;
     }
@@ -644,7 +651,7 @@
       }
     });
 
-    // Story typing lines (no “first relationship”, just Valentine + distance)
+    // Story typing lines
     const LINES = [
       "Somewhere between our late night talks and silly fights, you quietly became my favourite place to feel safe and soft.",
       "Every kilometre between Pune and Goa is just proof that our love is strong enough to stretch and still stay warm.",
@@ -987,4 +994,3 @@
   </script>
 </body>
 </html>
-
